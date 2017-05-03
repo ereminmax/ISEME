@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from blog.views import index, post
 
 admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$','blog.views.index'),
-    url(r'^(?P<slug>[\w\-]+)/$', 'blog.views.post'),
+    url(r'^$', index, name = 'index'),
+    url(r'^(?P<slug>[\w\-]+)/$', post, name = 'post'),
 ]

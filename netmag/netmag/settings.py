@@ -55,7 +55,7 @@ ROOT_URLCONF = 'netmag.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/py/netmag/netmag/templates/'],
+        'DIRS': ['/home/maxeremin/py/netmag/netmag/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
